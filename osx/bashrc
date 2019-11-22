@@ -1,0 +1,39 @@
+#############
+# FUNCTIONS #
+#############
+
+fix-git-email() {
+    git rebase -i --root -x "git commit --amend --author 'Noah Altunian <nbaltunian@gmail.com>' --no-edit"
+}
+
+###########
+# ALIASES #
+###########
+alias .="cd .."
+alias c=cd
+alias cat=nyan
+alias l=lsd
+alias ls=lsd
+alias ll="ls -l"
+alias diff='diff-so-fancy'
+alias cfn='cfn-lint'
+alias vi=nvim
+alias vim=vi
+alias view='nvim -R'
+
+#############
+# VARIABLES #
+#############
+
+export PS1="\[\e[36m\]\u\[\e[m\] \[\e[35m\]\W\[\e[m\] \[\e[33m\]\\$\[\e[m\] "
+export EDITOR=/usr/bin/nvim
+export CODESTATS_API_KEY="" # Fill me in
+
+# Set up bash completions
+source /usr/local/etc/bash_completion.d/brew
+
+# shellcheck disable=SC2231 disable=SC1090
+for file in $HOME/.bash_completion/*; do
+    source "$file"
+done
+
