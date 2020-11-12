@@ -1,0 +1,24 @@
+#!/bin/sh
+
+[ -x "$(command -v nvim)" && alias vim="nvim"
+
+# System
+alias \
+    ..="cd .."
+    c="cd"
+    l="ls"
+    ll="ls -l"
+
+# Git
+alias \
+    gs="git status --short"
+    gd="git diff"
+    gds="git diff --stat"
+
+# CLIs
+alias \
+    tshark="tshark --color"
+    vh="vagrant halt"
+    vs="vagrant ssh"
+    vsu="vagrant up && vagrant ssh"
+
