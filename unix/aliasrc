@@ -1,6 +1,6 @@
 #!/bin/sh
 
-[ -x "$(command -v nvim)" && alias vim="nvim"
+[ -x "$(command -v nvim)" ] && alias vim="nvim"
 
 # System
 alias \
@@ -17,7 +17,7 @@ alias \
 
 # CLIs
 alias \
-    dir="docker image rm"
+    dri="docker image rm"
     dls="docker image ls"
     tshark="tshark --color"
     vh="vagrant halt"
