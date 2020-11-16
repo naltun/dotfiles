@@ -17,6 +17,8 @@ alias \
 
 # CLIs
 alias \
+    dir="docker image rm"
+    dls="docker image ls"
     tshark="tshark --color"
     vh="vagrant halt"
     vs="vagrant ssh"
