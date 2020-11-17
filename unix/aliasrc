@@ -11,6 +11,7 @@ alias \
 
 # Git
 alias \
+    gb="git branch"
     gs="git status --short"
     gd="git diff"
     gds="git diff --stat"
