@@ -87,6 +87,11 @@ let g:blamer_delay = 500
 let g:blamer_enabled = 1
 let g:blamer_template = '<author>, <committer-time> • <summary>'
 
+" NERDTree
+let NERDTreeMinimalUI = 1
+let g:nerdtree_open = 0
+map <C-n> :NERDTreeToggle<CR>
+
 """"""""""""""""
 " Syntax and theme
 """"""""""""""""
