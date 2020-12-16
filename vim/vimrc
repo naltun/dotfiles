@@ -86,6 +86,7 @@ let g:airline_section_x = airline#section#create_right(['tagbar', 'filetype', '%
 let g:blamer_delay = 500
 let g:blamer_enabled = 1
 let g:blamer_template = '<author>, <committer-time> • <summary>'
+map <C-b> :BlamerToggle<CR>
 
 " NERDTree
 let NERDTreeMinimalUI = 1
