@@ -8,11 +8,13 @@ alias \
     c="cd"
     l="ls"
     ll="ls -l"
+    v="vim"
 
 # Git
 alias \
     gb="git branch"
     gs="git status --short"
+    gss="git status"
     gd="git diff"
     gds="git diff --stat"
 
