@@ -45,6 +45,15 @@ inoremap <leader><c-u> <esc>viwU<esc>i
 nnoremap <leader><c-h> :tabprevious<CR>
 nnoremap <leader><c-l> :tabnext<CR>
 
+"""""""""""""""
+" Automatic Commands
+"""""""""""""""
+
+" Lint then overwrite JSON files if `jsonlint' CLI is executable
+if executable('jsonlint')
+    autocmd BufWritePost *.json !jsonlint --in-place %
+endif
+
 """"""""""""""""
 " Plugs
 """"""""""""""""
