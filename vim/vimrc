@@ -45,6 +45,9 @@ inoremap <leader><c-u> <esc>viwU<esc>i
 nnoremap <leader><c-h> :tabprevious<CR>
 nnoremap <leader><c-l> :tabnext<CR>
 
+" Remove highlights
+map <C-h> :noh<CR>
+
 """""""""""""""
 " Automatic Commands
 """""""""""""""
