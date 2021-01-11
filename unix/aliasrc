@@ -6,6 +6,7 @@
 alias \
     ..="cd .."
     c="cd"
+    f="fff"
     l="ls"
     ll="ls -l"
     v="vim"
