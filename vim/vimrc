@@ -46,7 +46,7 @@ nnoremap <leader><c-h> :tabprevious<CR>
 nnoremap <leader><c-l> :tabnext<CR>
 
 " Remove highlights
-map <C-h> :noh<CR>
+map <C-h> :nohlsearch<CR>
 
 """""""""""""""
 " Automatic Commands
