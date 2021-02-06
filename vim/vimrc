@@ -8,6 +8,7 @@ set number numberwidth=4
 set tabstop=4 shiftwidth=4 expandtab
 set wildmenu
 set wrap
+set colorcolumn=100
 
 """"""""""""""""
 " Variables
