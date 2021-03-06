@@ -1,6 +1,9 @@
 #!/bin/sh
 
-[ -x "$(command -v nvim)" ] && alias vim="nvim"
+# Neovim
+[ -x "$(command -v nvim)"   ] && alias vim="nvim"
+# fd as packaged on Ubuntu/Pop!_OS
+[ -x "$(command -v fdfind)" ] && alias fd="fdfind"
 
 # System
 alias \
