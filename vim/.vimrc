@@ -75,7 +75,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'APZelos/blamer.nvim'
 
 " Themes
-Plug 'sainnhe/forest-night'
+Plug 'sainnhe/everforest'
 
 " Language Support
 Plug 'sheerun/vim-polyglot'
@@ -110,10 +110,15 @@ map <C-n> :NERDTreeToggle<CR>
 " Syntax and theme
 """"""""""""""""
 
-set termguicolors
-let g:forest_night_enable_italic = 1
-let g:forest_night_disable_italic_comment = 1
-colorscheme forest-night
+if has('termguicolors')
+    set termguicolors
+endif
+set background=dark
+
+let g:everforest_background = 'soft'
+let g:everforest_disable_italic_comment = 1
+
+colorscheme everforest
+let g:airline_theme = 'everforest'
 
 set nowrap
-
