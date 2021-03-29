@@ -1,33 +1,35 @@
 #!/bin/sh
 
 # Neovim
-[ -x "$(command -v nvim)"   ] && alias vim="nvim"
+[ -x "$(command -v nvim)"   ] \
+    && alias vim="nvim" && v="nvim"
 # fd as packaged on Ubuntu/Pop!_OS
-[ -x "$(command -v fdfind)" ] && alias fd="fdfind"
+[ -x "$(command -v fdfind)" ] \
+    && alias fd="fdfind"
 
 # System
 alias \
-    ..="cd .."
-    c="cd"
-    f="fff"
-    l="ls"
-    ll="ls -l"
+    ..="cd .." \
+    c="cd"     \
+    f="fff"    \
+    l="ls"     \
+    ll="ls -l" \
     v="vim"
 
 # Git
 alias \
-    gb="git branch"
-    gs="git status --short"
-    gss="git status"
-    gd="git diff"
+    gb="git branch" 	    \
+    gs="git status --short" \
+    gss="git status"	    \
+    gd="git diff" 	    \
     gds="git diff --stat"
 
 # CLIs
 alias \
-    dri="docker image rm"
-    dls="docker image ls"
-    tshark="tshark --color"
-    vh="vagrant halt"
-    vs="vagrant ssh"
+    dri="docker image rm"   \
+    dls="docker image ls"   \
+    tshark="tshark --color" \
+    vh="vagrant halt"       \
+    vs="vagrant ssh"        \
     vsu="vagrant up && vagrant ssh"
 
