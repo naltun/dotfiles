@@ -1,0 +1,28 @@
+{
+  "Darwin": {
+    "Formulae": [
+      "ansible",
+      "docker",
+      "docker-machine",
+      "fd",
+      "flux",
+      "ipython",
+      "jq",
+      "jsonlint",
+      "neovim",
+      "ripgrep",
+      "shellcheck",
+      "tmux",
+      "yamllint",
+      "zig",
+      "zsh-completions"
+    ],
+    "Casks": [
+      "alacritty",
+      "brave-browser",
+      "signal",
+      "vagrant",
+      "virtualbox"
+    ]
+  }
+}
