@@ -29,7 +29,8 @@
     "Linux": {
       "arch": [
         "git",
-        "neovim"
+        "neovim",
+        "tmux"
       ]
     }
   }
