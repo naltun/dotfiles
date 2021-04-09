@@ -27,11 +27,17 @@
   },
   {
     "Linux": {
-      "arch": [
-        "git",
-        "neovim",
-        "tmux"
-      ]
+      "arch": {
+        "community: [
+          "fd",
+          "neovim",
+          "ripgrep",
+          "tmux"
+        ],
+        "extra": [
+          "git"
+        ]
+      }
     }
   }
 }
