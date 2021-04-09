@@ -24,5 +24,13 @@
       "vagrant",
       "virtualbox"
     ]
+  },
+  {
+    "Linux": {
+      "arch": [
+        "git",
+        "neovim"
+      ]
+    }
   }
 }
