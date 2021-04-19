@@ -28,14 +28,24 @@
   {
     "Linux": {
       "arch": {
+        "blackarch": [
+          "enum4linux-ng",
+          "nikto",
+          "nipe",
+          "nmap",
+          "rustscan",
+          "seclists"
+        ],
         "community: [
           "fd",
           "neovim",
+          "openbsd-netcat",
           "ripgrep",
           "tmux"
         ],
         "extra": [
-          "git"
+          "git",
+          "postgresql"
         ]
       }
     }
