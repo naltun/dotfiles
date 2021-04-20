@@ -19,9 +19,10 @@ alias \
 # Git
 alias \
     gb="git branch" 	    \
+    gbd="git branch -D"     \
     gs="git status --short" \
     gss="git status"	    \
-    gd="git diff" 	    \
+    gd="git diff" 	        \
     gds="git diff --stat"
 
 # CLIs
