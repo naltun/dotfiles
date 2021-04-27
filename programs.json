@@ -27,6 +27,9 @@
   },
   "Linux": {
     "arch": {
+      "aur": [
+        "termshark"
+      ],
       "blackarch": [
         "enum4linux-ng",
         "nikto",
