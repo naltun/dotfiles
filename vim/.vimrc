@@ -49,6 +49,10 @@ nnoremap <leader><c-l> :tabnext<CR>
 " Remove highlights
 map <C-h> :nohlsearch<CR>
 
+" telescope for file fuzzy finding
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+
 """""""""""""""
 " Automatic Commands
 """""""""""""""
@@ -70,18 +74,24 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'https://gitlab.com/code-stats/code-stats-vim.git'
-Plug 'vim-airline/vim-airline'
-Plug 'APZelos/blamer.nvim'
+    Plug 'https://gitlab.com/code-stats/code-stats-vim.git'
+    Plug 'vim-airline/vim-airline'
+    Plug 'APZelos/blamer.nvim'
 
-" Themes
-Plug 'sainnhe/everforest'
+    " Themes
+    Plug 'sainnhe/everforest'
 
-" Language Support
-Plug 'sheerun/vim-polyglot'
+    " Language Support
+    Plug 'sheerun/vim-polyglot'
 
-" File Explorer
-Plug 'preservim/nerdtree'
+    " File Explorer
+    Plug 'preservim/nerdtree'
+
+    " telescope.nvim
+    Plug 'nvim-lua/popup.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
+
 
 call plug#end()
 
