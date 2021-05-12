@@ -49,6 +49,9 @@ nnoremap <leader><c-l> :tabnext<CR>
 " Remove highlights
 map <C-h> :nohlsearch<CR>
 
+" Open new tab
+noremap <leader><c-t> :tabnew<CR>
+
 " telescope for file fuzzy finding
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
