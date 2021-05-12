@@ -43,14 +43,14 @@ nnoremap <leader><c-u> <esc>viwU<esc>n
 vnoremap <leader><c-u> U
 inoremap <leader><c-u> <esc>viwU<esc>i
 
-nnoremap <leader><c-h> :tabprevious<CR>
-nnoremap <leader><c-l> :tabnext<CR>
+nnoremap <leader>h :tabprevious<CR>
+nnoremap <leader>l :tabnext<CR>
 
 " Remove highlights
-map <leader>h :nohlsearch<CR>
+map <leader>H :nohlsearch<CR>
 
 " Open new tab
-noremap <leader><c-t> :tabnew<CR>
+noremap <leader>t :tabnew<CR>
 
 " telescope for file fuzzy finding
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
