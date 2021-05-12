@@ -47,7 +47,7 @@ nnoremap <leader><c-h> :tabprevious<CR>
 nnoremap <leader><c-l> :tabnext<CR>
 
 " Remove highlights
-map <C-h> :nohlsearch<CR>
+map <leader>h :nohlsearch<CR>
 
 " Open new tab
 noremap <leader><c-t> :tabnew<CR>
