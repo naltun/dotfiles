@@ -95,6 +95,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
 
+    " Better way to ESC from insert mode
+    Plug 'jdhao/better-escape.vim'
 
 call plug#end()
 
