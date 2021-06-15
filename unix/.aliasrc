@@ -2,8 +2,10 @@
 
 # Neovim
 [ -x "$(command -v nvim)"   ] \
-    && alias vim="nvim"       \
-    && alias view="nvim -R"
+    && alias \
+        vi="nvim"      \
+        vim="nvim"     \
+        view="nvim -R"
 # fd as packaged on Ubuntu/Pop!_OS
 [ -x "$(command -v fdfind)" ] \
     && alias fd="fdfind"
