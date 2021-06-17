@@ -52,6 +52,12 @@ map <c-h> :nohlsearch<CR>
 " Open new tab
 noremap <leader>t :tabnew<CR>
 
+" Move tab -1
+noremap <leader><c-h> :-tabmove<CR>
+
+" Move tab +1
+noremap <leader><c-l> :+tabmove<CR>
+
 " telescope for file fuzzy finding
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
