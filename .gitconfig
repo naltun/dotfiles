@@ -1,0 +1,13 @@
+[user]
+    email = nbaltunian@gmail.com
+    name = Noah Altunian
+[pull]
+    rebase = false
+[init]
+    defaultBranch = master
+[sendemail]
+    smtpserver = smtp.gmail.com
+    smtpuser = nbaltunian@gmail.com
+    smtpencryption = tls
+    smtpserverport = 587
+    smtpPass = ""
