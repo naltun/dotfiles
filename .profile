@@ -1,1 +1,1 @@
-source "$HOME/.config/shell/profile"
+(cd "$HOME/.config/shell"; sh profile)
