@@ -104,6 +104,13 @@ call plug#begin('~/.vim/plugged')
     " Better way to ESC from insert mode
     Plug 'jdhao/better-escape.vim'
 
+    " Nvim interface to the tree-sitter parsing system
+    " Dependency for twilight.nvim
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+    " Dims inactive portions of code
+    Plug 'folke/twilight.nvim'
+
 call plug#end()
 
 """"""""""""""""
@@ -126,6 +133,9 @@ map <C-s> :BlamerToggle<CR>
 let NERDTreeMinimalUI = 1
 let g:nerdtree_open = 0
 map <C-n> :NERDTreeToggle<CR>
+
+" Twilight
+map <leader><C-t> :Twilight<CR>
 
 """"""""""""""""
 " Syntax and theme
