@@ -62,6 +62,9 @@ noremap <leader><c-l> :+tabmove<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 
+" Open a Python 3 REPL in a new window
+noremap <leader>p <c-w>n:terminal python3 -i<cr>i
+
 """""""""""""""
 " Automatic Commands
 """""""""""""""
