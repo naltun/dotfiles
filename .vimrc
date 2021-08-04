@@ -65,14 +65,8 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 " Open a Python 3 REPL in a new window
 noremap <leader>p <c-w>n:terminal python3 -i<cr>i
 
-"""""""""""""""
-" Automatic Commands
-"""""""""""""""
-
-" Lint then overwrite JSON files if `jsonlint' CLI is executable
-if executable('jsonlint')
-    autocmd BufWrite *.json silent !jsonlint --in-place %
-endif
+" Lint a JSON file using jsonlint
+noremap <leader><c-j> :!jsonlint -i %<cr>
 
 """"""""""""""""
 " Plugs
