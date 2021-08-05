@@ -66,7 +66,7 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 noremap <leader>p <c-w>n:terminal python3 -i<cr>i
 
 " Lint a JSON file using jsonlint
-noremap <leader><c-j> :!jsonlint -i %<cr>
+noremap <leader><c-j> :!jsonlint --in-place %<cr>
 
 """"""""""""""""
 " Plugs
