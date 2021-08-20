@@ -68,6 +68,9 @@ noremap <leader>p <c-w>n:terminal python3 -i<cr>i
 " Lint a JSON file using jsonlint
 noremap <leader><c-j> :!jsonlint --in-place %<cr>
 
+" Toggle the Tagbar window
+noremap <leader>tb <cmd>TagbarToggle<cr>
+
 """"""""""""""""
 " Plugs
 """"""""""""""""
@@ -107,6 +110,9 @@ call plug#begin('~/.vim/plugged')
 
     " Dims inactive portions of code
     Plug 'folke/twilight.nvim'
+
+    " Displays tags in a window, ordered by scope
+    Plug 'preservim/tagbar'
 
 call plug#end()
 
