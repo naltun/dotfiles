@@ -71,6 +71,9 @@ noremap <leader><c-j> :!jsonlint --in-place %<cr>
 " Toggle the Tagbar window
 noremap <leader>tb <cmd>TagbarToggle<cr>
 
+" Run shellcheck on the current file
+noremap <leader><c-s> :!shellcheck %<cr>
+
 """"""""""""""""
 " Plugs
 """"""""""""""""
