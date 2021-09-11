@@ -1,5 +1,4 @@
-##############################
-# Environment files
-##############################
+#!/bin/sh
 
-source aliasrc
+. aliasrc
+. functions
