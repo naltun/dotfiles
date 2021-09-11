@@ -2,7 +2,7 @@
 
 helpme() {
     # Run GNU Bash's `help' builtin
-    usage="Usage: help [-d] <cmd>"
+    usage="Usage: helpme [-d] <cmd>"
     ! type "bash" >/dev/null && echo "GNU Bash is not installed" && return 1
     [ -z "$1" ] && echo "$usage" && return 1
     [ "$SHELL" = /bin/bash ] && help "$1" && return 0
