@@ -19,3 +19,11 @@ helpme() {
 
     return 0
 }
+
+pp() {
+    # Pretty print file as if it was viewed in a text editor
+    usage="Usage: pp <file>"
+    [ -z "$1" ] && echo "$usage" && return 1
+    cat "$1" | awk '{ print NR "\t" $0 }'
+    return 0
+}
