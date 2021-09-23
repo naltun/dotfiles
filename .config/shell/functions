@@ -22,8 +22,15 @@ helpme() {
 
 pp() {
     # Pretty print file as if it was viewed in a text editor
-    usage="Usage: pp <file>"
+    usage="Usage: pp [-l] <file>"
     [ -z "$1" ] && echo "$usage" && return 1
-    cat "$1" | awk '{ print NR "\t" $0 }'
+
+    if [ "$1" = "-l" ]; then
+        [ -z "$2" ] && echo "$usage" && return 2
+        awk '{ print NR "\t" $0 }' < "$2" | less
+    else
+        awk '{ print NR "\t" $0 }' < "$1"
+    fi
+
     return 0
 }
