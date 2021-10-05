@@ -20,7 +20,7 @@ helpme() {
     return 0
 }
 
-pp() {
+pf() {
     # Pretty print file as if it was viewed in a text editor
     usage="Usage: pp [-l] <file>"
     [ -z "$1" ] && echo "$usage" && return 1
