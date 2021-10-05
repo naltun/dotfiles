@@ -65,11 +65,19 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 " Open a Python 3 REPL in a new window
 noremap <leader>p <c-w>n:terminal python3 -i<cr>i
 
-" Lint a JSON file using jsonlint
-noremap <leader><c-j> :!jsonlint --in-place %<cr>
-
 " Toggle the Tagbar window
 noremap <leader>tb <cmd>TagbarToggle<cr>
+
+"" Linting
+
+" Lint a Python file using Black, replacing single quotes with double quotes
+noremap <leader><c-b> :!black %<cr>
+
+" Lint a Python file using Black without replacing single quotes
+noremap <leader><c-b><c-s> :!black --skip-string-normalization %<cr>
+
+" Lint a JSON file using jsonlint
+noremap <leader><c-j> :!jsonlint --in-place %<cr>
 
 " Run shellcheck on the current file
 noremap <leader><c-s> :!shellcheck %<cr>
