@@ -65,6 +65,9 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 " Open a Python 3 REPL in a new window
 noremap <leader>p <c-w>n:terminal python3 -i<cr>i
 
+" Open a Deno REPL in a new window
+noremap <leader>d <c-w>n:terminal deno<cr>i
+
 " Toggle the Tagbar window
 noremap <leader>tb <cmd>TagbarToggle<cr>
 
