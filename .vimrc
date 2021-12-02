@@ -128,6 +128,9 @@ call plug#begin('~/.vim/plugged')
     " Displays tags in a window, ordered by scope
     Plug 'preservim/tagbar'
 
+    " Git wrapper
+    Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 """"""""""""""""
@@ -138,6 +141,7 @@ call plug#end()
 " let g:codestats_api_key = ''
 
 " Airline
+let g:airline_section_x = airline#section#create_left([])
 let g:airline_section_x = airline#section#create_right(['tagbar', 'filetype', '%{CodeStatsXp()}'])
 
 " Blamer
