@@ -25,7 +25,8 @@ alias \
     gs="git status --short" \
     gss="git status"	    \
     gd="git diff" 	        \
-    gds="git diff --stat"
+    gds="git diff --stat"   \
+    glm="git log master.."  \
 
 # CLIs
 alias \
