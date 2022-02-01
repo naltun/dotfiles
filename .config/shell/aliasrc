@@ -27,6 +27,7 @@ alias \
     gd="git diff" 	        \
     gds="git diff --stat"   \
     glm="git log master.."  \
+    gdm="git diff master"   \
 
 # CLIs
 alias \
