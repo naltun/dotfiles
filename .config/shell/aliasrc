@@ -2,10 +2,9 @@
 
 # Neovim
 [ -x "$(command -v nvim)"   ] \
-    && alias       \
-        vi="nvim"  \
-        vim="nvim" \
-        view="nvim -R"
+    && vi="nvim"  \
+    && alias vim="nvim"       \
+    && alias view="nvim -R"
 # fd as packaged on Ubuntu/Pop!_OS
 [ -x "$(command -v fdfind)" ] \
     && alias fd="fdfind"
@@ -13,28 +12,32 @@
 # System
 alias \
     ..="cd .." \
-    c="cd"     \
-    f="fff"    \
-    l="ls"     \
-    ll="ls -l" \
+    c="cd" \
+    f="fff" \
+    l="lsd --icon never" \
+    ls="lsd --icon never" \
+    ll="lsd --icon never -l" \
+    t="tree -C" \
+    td="tree -Cd" \
 
 # Git
 alias \
-    gb="git branch" 	    \
-    gbd="git branch -D"     \
+    gb="git branch" \
+    gbd="git branch -D" \
     gs="git status --short" \
-    gss="git status"	    \
-    gd="git diff" 	        \
-    gds="git diff --stat"   \
-    glm="git log master.."  \
-    gdm="git diff master"   \
+    gss="git status" \
+    gd="git diff" \
+    gds="git diff --stat" \
+    glm="git log master.." \
+    gdm="git diff master" \
+    gfu="git pull origin master ; git fetch --all" \
+    gla="git log --abbrev-commit"
 
 # CLIs
 alias \
-    dri="docker image rm"   \
-    dls="docker image ls"   \
+    dri="docker image rm" \
+    dls="docker image ls" \
     tshark="tshark --color" \
-    vh="vagrant halt"       \
-    vs="vagrant ssh"        \
+    vh="vagrant halt" \
+    vs="vagrant ssh" \
     vsu="vagrant up && vagrant ssh"
-

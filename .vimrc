@@ -9,6 +9,8 @@ set tabstop=4 shiftwidth=4 expandtab
 set wildmenu
 set wrap
 set colorcolumn=100
+" For use with Himalaya
+set hidden
 
 """"""""""""""""
 " Variables
@@ -62,11 +64,8 @@ noremap <leader><c-l> :+tabmove<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 
-" Open a Python 3 REPL in a new window
-noremap <leader>p <c-w>n:terminal python3 -i<cr>i
-
-" Open a Deno REPL in a new window
-noremap <leader>d <c-w>n:terminal deno<cr>i
+" Open a Python 3 REPL in a new window with version message suppressed
+noremap <leader>p <c-w>n:terminal python3 -iq<cr>i
 
 " Toggle the Tagbar window
 noremap <leader>tb <cmd>TagbarToggle<cr>
@@ -103,6 +102,7 @@ call plug#begin('~/.vim/plugged')
 
     " Themes
     Plug 'sainnhe/everforest'
+    Plug 'arcticicestudio/nord-vim'
 
     " Language Support
     Plug 'sheerun/vim-polyglot'
@@ -128,8 +128,14 @@ call plug#begin('~/.vim/plugged')
     " Displays tags in a window, ordered by scope
     Plug 'preservim/tagbar'
 
+    " UI plugin for Himalaya email client
+    Plug 'soywod/himalaya', {'rtp': 'vim'}
+
     " Git wrapper
     Plug 'tpope/vim-fugitive'
+
+    " vim-slime
+    Plug 'jpalardy/vim-slime'
 
 call plug#end()
 
@@ -138,7 +144,7 @@ call plug#end()
 """"""""""""""""
 
 " CodeStats
-" let g:codestats_api_key = ''
+let g:codestats_api_key = 'SFMyNTY.Ym1Gc2RIVnUjI016RTFNUT09.qiauHo-hzZbzRnx8Dg4AtnVCoLPMx3PAFka43JPhrxc'
 
 " Airline
 let g:airline_section_x = airline#section#create_left([])
@@ -158,6 +164,10 @@ map <C-n> :NERDTreeToggle<CR>
 " Twilight
 map <leader><C-t> :Twilight<CR>
 
+" Himalaya
+let g:himalaya_mailbox_picker = 'telescope'
+let g:himalaya_telescope_preview_enabled = 0
+
 """"""""""""""""
 " Syntax and theme
 """"""""""""""""
@@ -170,7 +180,7 @@ set background=dark
 let g:everforest_background = 'soft'
 let g:everforest_disable_italic_comment = 1
 
-colorscheme everforest
+colorscheme nord
 let g:airline_theme = 'everforest'
 
 set nowrap
